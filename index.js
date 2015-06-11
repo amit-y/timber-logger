@@ -6,24 +6,24 @@
 module.exports = {
 
   log: function () {
-    console.log('\x1b[32m', Array.prototype.slice.call(arguments) ,'\x1b[0m');
+    console.log('\x1b[32m', Array.prototype.slice.call(arguments).join(' ') ,'\x1b[0m');
   },
 
   info: function () {
-    console.log(Array.prototype.slice.call(arguments));
+    console.log(Array.prototype.slice.call(arguments).join(' '));
   },
 
   error: function () {
-    console.log('\x1b[31m', Array.prototype.slice.call(arguments) ,'\x1b[0m');
+    console.log('\x1b[31m', Array.prototype.slice.call(arguments).join(' ') ,'\x1b[0m');
   },
 
   warn: function () {
-    console.log('\x1b[33m', Array.prototype.slice.call(arguments) ,'\x1b[0m');
+    console.log('\x1b[33m', Array.prototype.slice.call(arguments).join(' ') ,'\x1b[0m');
   },
 
   /** Returns a horizontal rule. */
   hr: function() {
-    return repeat(null, process.stdout.getWindowSize()[0]);
+    return repeat(null, process.stdout.getWindowSize()[0]-3);
   }
 
 };

@@ -1,6 +1,6 @@
 {
   "name": "timber-logger",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "Adds pizzazz to logging statements",
   "main": "index.js",
   "scripts": {
