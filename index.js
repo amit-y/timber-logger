@@ -3,6 +3,8 @@
    *
    * @param  {object}
    */
+var banner = require('./banner');
+
 module.exports = {
 
   log: function () {
@@ -24,6 +26,10 @@ module.exports = {
   /** Returns a horizontal rule. */
   hr: function() {
     return repeat(null, process.stdout.getWindowSize()[0]-3);
+  },
+
+  makeBanner: function(text) {
+    return banner.plot(text);
   }
 
 };

@@ -1,6 +1,6 @@
 {
   "name": "timber-logger",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Adds pizzazz to logging statements",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,5 @@
   "bugs": {
     "url": "https://github.com/amit-y/timber-logger/issues"
   },
-  "homepage": "https://github.com/amit-y/timber-logger#readme"
+  "homepage": "https://github.com/amit-y/timber-logger"
 }
