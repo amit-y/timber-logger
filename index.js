@@ -1,5 +1,6 @@
   /**
-   * Logs the passed object to the console.
+   * Colors output to the console using escape codes.
+   * https://en.wikipedia.org/wiki/ANSI_escape_code
    *
    * @param  {object}
    */
@@ -25,7 +26,7 @@ module.exports = {
 
   /** Returns a horizontal rule. */
   hr: function() {
-    return repeat(null, process.stdout.getWindowSize()[0]-3);
+    return repeat(null, ((process.stdout.isTTY) ? process.stdout.columns : 33)-3);
   },
 
   makeBanner: function(text) {

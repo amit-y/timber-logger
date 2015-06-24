@@ -93,7 +93,7 @@ var map = {
 };
 
 String.prototype.fitText = function() {
-  var w = Math.floor(process.stdout.getWindowSize()[0] / 9);
+  var w = Math.floor(((process.stdout.isTTY) ? process.stdout.columns : 63) / 9);
   return (this.length > w) ? this.substr(0,w) : this.toString();
 };
 
